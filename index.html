@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run Calculator</title>
+</head>
+<body>
+  <header>
+    <h1>Run Calculator</h1>
+    <p>Input your goal time to calculate your pace and speed.</p>
+  </header>
+
+  <main>
+    <section id="calculator">
+      <form id="run-calculator-form">
+        <!-- Goal Inputs -->
+        <div class="goal-input">
+          <label for="marathon">Marathon Goal Time (hh:mm:ss):</label>
+          <input type="text" id="marathon" name="marathon" placeholder="e.g., 3:30:00">
+        </div>
+
+        <div class="goal-input">
+          <label for="half-marathon">Half Marathon Goal Time (hh:mm:ss):</label>
+          <input type="text" id="half-marathon" name="half-marathon" placeholder="e.g., 1:45:00">
+        </div>
+
+        <div class="goal-input">
+          <label for="10k">10K Goal Time (hh:mm:ss):</label>
+          <input type="text" id="10k" name="10k" placeholder="e.g., 0:45:00">
+        </div>
+
+        <div class="goal-input">
+          <label for="5k">5K Goal Time (hh:mm:ss):</label>
+          <input type="text" id="5k" name="5k" placeholder="e.g., 0:22:30">
+        </div>
+
+        <div class="goal-input">
+          <label for="mile">1 Mile Goal Time (mm:ss):</label>
+          <input type="text" id="mile" name="mile" placeholder="e.g., 6:00">
+        </div>
+
+        <button type="button" id="calculate">Calculate</button>
+      </form>
+    </section>
+
+    <section id="results">
+      <h2>Results</h2>
+      <div id="results-container">
+        <p>Select a distance and enter your goal time to see the pace and speed.</p>
+        <ul>
+          <li><strong>Pace:</strong> <span id="pace-min-mile">-</span> min/mile | <span id="pace-min-km">-</span> min/km</li>
+          <li><strong>Speed:</strong> <span id="speed-mph">-</span> mph | <span id="speed-kph">-</span> kph</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 The Simon Shi</p>
+  </footer>
+
+  <script>
+    // Placeholder for your JavaScript logic
+    document.getElementById('calculate').addEventListener('click', function() {
+      // You'll implement the JavaScript calculations here
+      alert('Calculation functionality coming soon!');
+    });
+  </script>
+</body>
+</html>

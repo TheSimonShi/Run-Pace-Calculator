@@ -1,3 +1,17 @@
 Run Pace Calculator
 
 Goal: Convert paces
+
+Algorithm:
+Ex: Marathon time: 3hour, 00min
+= 6:51 min/mile pace or 4:15 min/km pace
+
+Formula:
+3 hour = 3 * 60 = 180 minutes
+26.218 exact miles
+
+180 min / 26.218 miles = 6.86...
+
+60 * 0.86... = 51
+
+Pace per mile: 6 minutes, 51 sec

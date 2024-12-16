@@ -3,7 +3,23 @@ document.getElementById('calculate').addEventListener('click', function () {
   
     // Example: If the marathon time is filled in, update results
     if (marathonTime) {
-      const paceMinMile = "8:00"; // Placeholder pace for demo
+      if (isNaN(marathonTime) || marathonTime <= 0) {
+        console.error("Please enter a valid marathon time.");
+      }
+
+      let totalTime = marathonTime * 60;
+      let initTime = totalTime / 26.218;
+      let minutesTime = Math.floor(initTime);
+      let secondsInitTime = initTime - minutesTime;
+      let finalSecondsTime = Math.trunc(60 * secondsInitTime);
+
+      let finalTime = minutesTime + ":" + finalSecondsTime;
+      //TODO parse int for any integer time going through
+
+
+
+
+      let paceMinMile = finalTime;
       const paceMinKm = "4:58"; // Placeholder pace for demo
       const speedMph = "7.5"; // Placeholder speed for demo
       const speedKph = "12.1"; // Placeholder speed for demo
@@ -17,4 +33,3 @@ document.getElementById('calculate').addEventListener('click', function () {
       alert('Please enter a marathon time.');
     }
   });
-  

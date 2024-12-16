@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Main Content */
+  main {
+    margin: 2rem 0;
+  }
+  
+  #calculator {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .goal-input {
+    margin-bottom: 1rem;
+  }
+  
+  .goal-input label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .goal-input input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #calculate {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  #calculate:hover {
+    background-color: #004099;
+  }
+  
+  /* Results Section */
+  #results {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  #results h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  #results-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  #results-container p {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  #results-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #results-container li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  
+  #results-container span {
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    #calculate {
+      font-size: 1rem;
+    }
+  }
+  

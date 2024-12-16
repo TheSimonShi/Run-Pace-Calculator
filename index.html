@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Run Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Run Calculator</h1>
-    <p>Input your goal time to calculate your pace and speed.</p>
+    <div class="container">
+      <h1>Run Calculator</h1>
+      <p>Input your goal time to calculate your pace and speed.</p>
+    </div>
   </header>
 
   <main>
-    <section id="calculator">
+    <section id="calculator" class="container">
       <form id="run-calculator-form">
         <!-- Goal Inputs -->
         <div class="goal-input">
@@ -44,7 +48,7 @@
       </form>
     </section>
 
-    <section id="results">
+    <section id="results" class="container">
       <h2>Results</h2>
       <div id="results-container">
         <p>Select a distance and enter your goal time to see the pace and speed.</p>
@@ -57,7 +61,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2024 The Simon Shi</p>
+    <div class="container">
+      <p>&copy; 2024 The Simon Shi</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
